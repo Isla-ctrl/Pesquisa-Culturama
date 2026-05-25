@@ -6,6 +6,51 @@
     <title>Pesquisa culturama</title>
 </head>
 <body>
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                <!--DADOS PESSOAIS-->
+
+                <legend>Dados pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" required> 
+
+                <br>
+
+                <label for="age">Idade</label>
+                <input type="number" name="age" min="12" max="100" required> 
+
+                <br>
+
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate">
+
+                <br>
+
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" required>
+
+                <br>
+                
+                <label for="userPhoneNumber">Telefone</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD = número sem espaço e hífen">
+
+                <br>
+
+                <label for="userImage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userImage">
+
+                <br>
+
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+
+        </form>
+    </section>
     
 </body>
 </html>
