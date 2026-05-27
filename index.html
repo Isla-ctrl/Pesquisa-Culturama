@@ -8,188 +8,192 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Pesquisa culturama</title>
 </head>
 <body>
-    <header>
-        <img src="img/logo-culturama.png" alt="Logo culturama">
-        <h1>Pesquisa Online</h1>
-    </header>
-    <section>
-        <form action="" method="get">
-            <fieldset>
-                <legend>Dados pessoais</legend>
-                <label for="name">Nome</label>
-                <input id="name" type="text" name="userName" required> 
+    <main>
+        <header>
+            <img src="img/logo-culturama.png" alt="Logo culturama">
+            <h1>Pesquisa de opinião</h1>
+        </header>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" name="userName" required> 
 
-                <br>
+                    <br>
 
-                <label for="age">Idade</label>
-                <input id="age" type="number" name="userAge" min="12" max="100" required> 
+                    <label for="age">Idade</label>
+                    <input id="age" type="number" name="userAge" min="12" max="100" required> 
 
-                <br>
+                    <br>
 
-                <label for="birthDate">Data de nascimento</label>
-                <input id="birthDate" type="date" name="userbirthDate">
+                    <label for="birthDate">Data de nascimento</label>
+                    <input id="birthDate" type="date" name="userbirthDate">
 
-                <br>
+                    <br>
 
-                <label for="email">Email</label>
-                <input id="email" type="email" name="userEmail" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="userEmail" required>
 
-                <br>
-                
-                <label for="phoneNumber">Telefone</label>
-                <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD = número sem espaço e hífen">
+                    <br>
+                    
+                    <label for="phoneNumber">Telefone</label>
+                    <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD = número sem espaço e hífen">
 
-                <br>
+                    <br>
 
-                <label for="image">Upload de foto</label>
-                <input id="image" type="file" accept="image/*" name="userImage">
-            </fieldset>
+                    <label for="image">Upload de foto</label>
+                    <input id="image" type="file" accept="image/*" name="userImage">
+                </fieldset>
 
-            <fieldset>
-                <legend>Perfil</legend>
+                <fieldset>
+                    <legend>Perfil</legend>
 
-                <p>Gênero:</p>
+                    <p>Gênero:</p>
 
-                <input id="femme" type="radio" name="userGender" value="Feminino">
-                <label for="femme">Feminino</label>
+                    <input id="femme" type="radio" name="userGender" value="Feminino">
+                    <label for="femme">Feminino</label>
 
-                <input id="masc" type="radio" name="userGender" value="Masculino">
-                <label for="masc">Masculino</label>
+                    <input id="masc" type="radio" name="userGender" value="Masculino">
+                    <label for="masc">Masculino</label>
 
-                <input id="notInformed" type="radio" name="userGender" value="notInformed">
-                <label for="notInformed">Prefiro não informar</label>
-                <br>
+                    <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                    <label for="notInformed">Prefiro não informar</label>
+                    <br>
 
-                <label for="maritalStatus">Estado cívil:</label>
-                <select id="maritalStatus" name="userMaritalStatus">
-                    <option value="notInformed">Selecione...
-                    </option>
-                    <option value="casado">Casado
-                    </option>
-                    <option value="solteiro">Solteiro
-                    </option>
-                    <option value="divorciado">Divorciado
-                    </option>
-                    <option value="casado">União estável
-                    </option>
-                </select>
+                    <label for="maritalStatus">Estado cívil:</label>
+                    <select id="maritalStatus" name="userMaritalStatus">
+                        <option value="notInformed">Selecione...
+                        </option>
+                        <option value="casado">Casado
+                        </option>
+                        <option value="solteiro">Solteiro
+                        </option>
+                        <option value="divorciado">Divorciado
+                        </option>
+                        <option value="casado">União estável
+                        </option>
+                    </select>
 
-                <label for="states">Estado:</label>
-                <select id="states" name="userStates" required>
-                    <option value="acre">Acre
-                    </option>
-                    <option value="alagoas">Alagoas                                                                                                                                             </option>
-                    <option value="amapa">Amapá                                                                                                                                                 </option>
-                    <option value="amazonas">Amazonas                                                                                                                                            </option>
-                    <option value="bahia">Bahia                                                                                                                                                 </option>
-                    <option value="ceara">Ceará                                                                                                                                                  </option>
-                    <option value="distrito-federal">Distrito Federal                                                                                                                            </option>
-                    <option value="espirito-santo">Espirito Santo                                                                                                                                </option>
-                    <option value="goias">Goiás                                                                                                                                                 </option>
-                    <option value="maranhao">Maranhão                                                                                                                                           </option>
-                    <option value="mato-grosso-do-sul">Mato Grosso do Sul                                                                                                                       </option>
-                    <option value="mato-grosso">Mato Grosso                                                                                                                                      </option>
-                    <option value="minas-gerais">Minas Gerais                                                                                                                                    </option>
-                    <option value="para">Pará                                                                                                                                                   </option>
-                    <option value="paraiba">Paraíba                                                                                                                                             </option>
-                    <option value="parana">Paraná                                                                                                                                               </option>
-                    <option value="pernambuco">Pernambuco                                                                                                                                       </option>
-                    <option value="piaui">Piauí                                                                                                                                                 </option>
-                    <option value="rio-de-janeiro">Rio de Janeio                                                                                                                                </option>
-                    <option value="rio-grande=do-norte">Rio Grande do Norte                                                                                                                     </option>
-                    <option value="rio-grande-do sul">Rio Grande do Sul                                                                                                                         </option>
-                    <option value="rondonia">Rondônia                                                                                                                                           </option>
-                    <option value="roraima">Roraima                                                                                                                                             </option>
-                    <option value="santa-catarina">Santa Catarina                                                                                                                                </option>
-                    <option value="sao-paulo">São Paulo                                                                                                                                          </option>
-                    <option value="sergipe">Sergipe                                                                                                                                             </option>
-                    <option value="tocantins">Tocantins                                                                                                                                         </option>
-                </select>
+                    <label for="states">Estado:</label>
+                    <select id="states" name="userStates" required>
+                        <option value="notInformed">Selecione...                                                                                                                                </option>
+                        <option value="acre">Acre
+                        </option>
+                        <option value="alagoas">Alagoas                                                                                                                                         </option>
+                        <option value="amapa">Amapá                                                                                                                                             </option>
+                        <option value="amazonas">Amazonas                                                                                                                                       </option>
+                        <option value="bahia">Bahia                                                                                                                                             </option>
+                        <option value="ceara">Ceará                                                                                                                                             </option>
+                        <option value="distrito-federal">Distrito Federal                                                                                                                       </option>
+                        <option value="espirito-santo">Espirito Santo                                                                                                                           </option>
+                        <option value="goias">Goiás                                                                                                                                             </option>
+                        <option value="maranhao">Maranhão                                                                                                                                       </option>
+                        <option value="mato-grosso-do-sul">Mato Grosso do Sul                                                                                                                   </option>
+                        <option value="mato-grosso">Mato Grosso                                                                                                                                 </option>
+                        <option value="minas-gerais">Minas Gerais                                                                                                                               </option>
+                        <option value="para">Pará                                                                                                                                               </option>
+                        <option value="paraiba">Paraíba                                                                                                                                         </option>
+                        <option value="parana">Paraná                                                                                                                                           </option>
+                        <option value="pernambuco">Pernambuco                                                                                                                                   </option>
+                        <option value="piaui">Piauí                                                                                                                                             </option>
+                        <option value="rio-de-janeiro">Rio de Janeio                                                                                                                            </option>
+                        <option value="rio-grande=do-norte">Rio Grande do Norte                                                                                                                 </option>
+                        <option value="rio-grande-do sul">Rio Grande do Sul                                                                                                                     </option>
+                        <option value="rondonia">Rondônia                                                                                                                                       </option>
+                        <option value="roraima">Roraima                                                                                                                                         </option>
+                        <option value="santa-catarina">Santa Catarina                                                                                                                           </option>
+                        <option value="sao-paulo">São Paulo                                                                                                                                     </option>
+                        <option value="sergipe">Sergipe                                                                                                                                         </option>
+                        <option value="tocantins">Tocantins                                                                                                                                     </option>
+                    </select>
+                    <br>
 
-                <label for="city">Cidade:</label>
-                <input id="city" type="text" name="userCity">
+                    <label for="city">Cidade:</label>
+                    <input id="city" type="text" name="userCity">
+                </fieldset>
 
-            </fieldset>
+                <fieldset>
+                    <legend>Hábitos</legend>
 
-            <fieldset>
-                <legend>Hábitos</legend>
+                    <p>Redes Sociais:</p>
 
-                <p>Redes Sociais:</p>
+                    <input id="instagram" type="checkbox" name="social" value="instagram">
+                    <label for="instagram">Instagram</label>
+                    <br>
 
-                <input id="instagram" type="checkbox" name="social" value="instagram">
-                <label for="instagram">Instagram</label>
-                <br>
+                    <input id="facebook" type="checkbox" name="social" value="facebook">
+                    <label for="facebook">Facebook</label>
+                    <br>
 
-                <input id="facebook" type="checkbox" name="social" value="facebook">
-                <label for="facebook">Facebook</label>
-                <br>
+                    <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                    <label for="linkedin">Linkedin</label>
+                    <br>
 
-                <input id="linkedin" type="checkbox" name="social" value="linkedin">
-                <label for="linkedin">Linkedin</label>
-                <br>
+                    <input id="x" type="checkbox" name="social" value="x">
+                    <label for="x">X</label>
+                    <br>
 
-                <input id="x" type="checkbox" name="social" value="x">
-                <label for="x">X</label>
-                <br>
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text" >
+                    <datalist id="styleTypes">
+                        <option value="Rock">
+                        <option value="Pop">
+                        <option value="Samba">
+                        <option value="Sertanejo">
+                    </datalist>
+                    <br>
 
-                <label for="musicStyle">Estilo Musical:</label>
-                <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text" >
-                <datalist id="styleTypes">
-                    <option value="Rock">
-                    <option value="Pop">
-                    <option value="Samba">
-                    <option value="Sertanejo">
-                </datalist>
-                <br>
+                    <label for="favoriteColor">Cor Favorita:</label>
+                    <input id="favoriteColor" name="userFavoriteColor" type="color">
+                </fieldset>
 
-                <label for="favoriteColor">Cor Favorita:</label>
-                <input id="favoriteColor" name="userFavoriteColor" type="color">
+                <fieldset>
+                    <legend>Opinião</legend>
 
-            </fieldset>
+                    <p>O que você acha da qualidade no nosso serviço:</p>
 
-            <fieldset>
-                <legend>Opinião</legend>
+                    <input type="radio" name="userSatisfaction" id="otima">
+                    <label for="otima">Ótima</label>
+                    <br>
 
-                <p>Satisfação:</p>
+                    <input type="radio" name="userSatisfaction" id="boa">
+                    <label for="boa">Boa</label>
+                    <br>
 
-                <input type="radio" name="userSatisfaction" id="otima">
-                <label for="otima">Ótima</label>
+                    <input type="radio" name="userSatisfaction" id="regular">
+                    <label for="regular">Regular</label>
+                    <br>
 
-                <input type="radio" name="userSatisfaction" id="boa">
-                <label for="boa">Boa</label>
+                    <input type="radio" name="userSatisfaction" id="ruim">
+                    <label for="ruim">Ruim</label>
+                    <br>
 
-                <input type="radio" name="userSatisfaction" id="regular">
-                <label for="regular">Regular</label>
+                    <label for="opinion">Deixe sua opinião:</label>
+                    <textarea name="userOpinion" id="opinion" placeholder="Digite aqui... "></textarea>
+                </fieldset>
 
-                <input type="radio" name="userSatisfaction" id="ruim">
-                <label for="ruim">Ruim</label>
-                <br>
+                <fieldset>
+                    <legend>Confirmações</legend>
 
-                <label for="opinion">Deixe sua opinião:</label>
-                <textarea name="userOpinion" id="opinion" placeholder="Digite aqui... "></textarea>
+                    <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
+                    <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+                    <br>
 
-            </fieldset>
+                    <input type="checkbox" name="userGetResult" id="getResult" value="accepted" required>
+                    <label for="getResult">Desejo receber o resultado por e-mail</label>
+                </fieldset>
 
-            <fieldset>
-                <legend>Confirmações</legend>
-
-                <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
-                <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
-                <br>
-
-                <input type="checkbox" name="userGetResult" id="getResult" value="accepted" required>
-                <label for="getResult">Desejo receber o resultado por e-mail</label>
-
-            </fieldset>
-
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-
-        </form>
-    </section>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
     
 </body>
 </html>
