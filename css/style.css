@@ -32,8 +32,8 @@ html{
     --form-valid: #00ff00;
     --btn-submit-hover: #ffff00;
     --btn-submit-texto: #ffffff;
-    --btn-reset-hover: #ffffff;
-    --btn-reset-texto: #000000;
+    --btn-reset-hover: #ff3333;
+    --btn-reset-texto: #ffffff;
 }
 
 body{
