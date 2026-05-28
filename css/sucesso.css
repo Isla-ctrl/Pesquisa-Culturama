@@ -4,8 +4,27 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 100%;
+}
+
+:root{
+    --cor-texto: #333333;
+    --cor-fundo: #ffffff;
+    --btn-fundo: #22e954;
+    --btn-fundo-hover: #19aa3e;
+}
+
+.theme-high-contrast{
+    --cor-texto: #ffffff;
+    --cor-fundo: #000000;
+    --btn-fundo: #ffff00;
+    --btn-fundo-hover: #ffffff;
+}
+
 body{
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: "Work Sans", sans-serif;
 }
 
@@ -32,20 +51,20 @@ section img{
 h1{
     font-family: "Fjalla One", sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 p{
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     margin-top: 40px;
 }
 
 a{
-    color: #ffffff;
-    font-size: 20px;
+    color: var(--cor-texto);
+    font-size: 1.25rem;
     text-decoration: none;
-    background-color: #22e954;
+    background-color: var(--btn-fundo);
     width: 85px;
     height: 30px;
     display: block;
@@ -56,7 +75,7 @@ a{
 }
 
 a:hover{
-    background-color: green;
+    background-color: var(--btn-fundo-hover);
 }
 
 @media (max-width: 768px){
@@ -72,12 +91,11 @@ a:hover{
     }
 
     h1{
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     p{
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 1rem;
     }
-
 }
