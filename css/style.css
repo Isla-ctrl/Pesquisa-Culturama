@@ -8,8 +8,23 @@ html{
     font-size: 100%;
 }
 
+:root{
+    --form-fundo-pagina: #f9f9f9;
+    --form-fundo-caixa: #ffffff;
+    --form-borda: 1px solid #cccccc;
+    --form-texto: #333333;
+    --form-focus: #6495ed;
+    --form-invalid: #ff0000;
+    --form-valid: #008000;
+    --btn-submit-hover: #19aa3e;
+    --btn-submit-texto: #ffffff;
+    --btn-reset-hover: 1px solid #cccccc;
+    --btn-reset-texto: #333333;
+}
+
 body{
-    background-color: #f9f9f9;
+    background-color: var(--form-fundo-pagina);
+    color: var(--form-texto);
     font-family: "Work Sans", sans-serif;
 }
 
@@ -33,7 +48,7 @@ h1{
 }
 
 form{
-    background-color: #ffffff;
+    background-color: var(--form-fundo-caixa);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 100px;
@@ -41,7 +56,7 @@ form{
 
 fieldset{
     padding: 15px;
-    border: 1px solid #cccccc;
+    border: var(--form-borda);
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -61,7 +76,7 @@ input, select, textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #cccccc;
+    border: var(--form-borda);
     border-radius: 5px;
 }
 
@@ -95,16 +110,16 @@ small{
 }
 
 input:focus{
-    border-color: cornflowerblue;
+    border-color: var(--form-focus);
     outline: none;
 }
 
 input:invalid{
-    border-color: red;
+    border-color: var(--form-invalid);
 }
 
 input:valid{
-    border-color: green;
+    border-color: var(--form-valid);
 }
 
 button{
@@ -118,11 +133,11 @@ button{
 }
 
 button[type="submit"]:hover{
-    background-color: green;
-    color: #ffffff;
+    background-color: var(--btn-submit-hover);
+    color: var(--btn-submit-texto);
 }
 
 button[type="reset"]:hover{
-    background-color: rgb(73, 69, 68);
-    color: #ffffff;
+    background-color: var(--btn-reset-hover);
+    color: var(--btn-reset-texto);
 }

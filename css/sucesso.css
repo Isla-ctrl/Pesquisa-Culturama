@@ -15,6 +15,7 @@ html{
     --btn-fundo-hover: #19aa3e;
 }
 
+/*lembrar de ver o fundo do hover p/ n ficar igual o fundo de texto*/
 .theme-high-contrast{
     --cor-texto: #ffffff;
     --cor-fundo: #000000;
