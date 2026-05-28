@@ -18,8 +18,22 @@ html{
     --form-valid: #008000;
     --btn-submit-hover: #19aa3e;
     --btn-submit-texto: #ffffff;
-    --btn-reset-hover: 1px solid #cccccc;
-    --btn-reset-texto: #333333;
+    --btn-reset-hover: #333333;
+    --btn-reset-texto: #ffffff;
+}
+
+.theme-high-contrast{
+    --form-fundo-pagina: #000000;
+    --form-fundo-caixa: #000000;
+    --form-borda: 2px solid #ffffff;
+    --form-texto: #ffffff;
+    --form-focus: #ffff00;
+    --form-invalid: #ff3333;
+    --form-valid: #00ff00;
+    --btn-submit-hover: #ffff00;
+    --btn-submit-texto: #ffffff;
+    --btn-reset-hover: #ffffff;
+    --btn-reset-texto: #000000;
 }
 
 body{
