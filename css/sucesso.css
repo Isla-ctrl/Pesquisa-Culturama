@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,9 +9,16 @@ body{
     font-family: "Work Sans", sans-serif;
 }
 
+header{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 75px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 header img{
     display: block;
-    margin: 75px 0 0 360px;
     width: 100px;
 }
 
@@ -51,3 +59,25 @@ a:hover{
     background-color: green;
 }
 
+@media (max-width: 768px){
+    header{
+        margin-top: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section img{
+        width: 60px;
+        margin-top: 60px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+}
