@@ -36,6 +36,10 @@ html{
     --btn-reset-texto: #ffffff;
 }
 
+.theme-high-contrast header img{
+        filter: invert(1);
+}
+
 body{
     background-color: var(--form-fundo-pagina);
     color: var(--form-texto);
