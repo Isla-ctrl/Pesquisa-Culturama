@@ -13,7 +13,7 @@ html{
     --form-fundo-caixa: #ffffff;
     --form-borda: 1px solid #cccccc;
     --form-texto: #333333;
-    --form-focus: #6495ed;
+    --form-focus: 1px solid #6495ed;
     --form-invalid: #ff0000;
     --form-valid: #008000;
     --btn-submit-hover: #19aa3e;
@@ -27,7 +27,7 @@ html{
     --form-fundo-caixa: #000000;
     --form-borda: 2px solid #ffffff;
     --form-texto: #ffffff;
-    --form-focus: #ffff00;
+    --form-focus: 2px solid #ffff00;
     --form-invalid: #ff3333;
     --form-valid: #00ff00;
     --btn-submit-hover: #ffff00;
@@ -124,8 +124,8 @@ small{
 }
 
 input:focus{
-    border-color: var(--form-focus);
     outline: none;
+    border: var(--form-focus) !important;
 }
 
 input:invalid{
