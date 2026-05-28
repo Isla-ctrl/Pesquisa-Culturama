@@ -15,12 +15,16 @@ html{
     --btn-fundo-hover: #19aa3e;
 }
 
-/*lembrar de ver o fundo do hover p/ n ficar igual o fundo de texto*/
 .theme-high-contrast{
     --cor-texto: #ffffff;
     --cor-fundo: #000000;
     --btn-fundo: #ffff00;
     --btn-fundo-hover: #ffffff;
+    --btn-texto: #000000;
+}
+
+.theme-high-contrast header img{
+    filter: invert(1);
 }
 
 body{
@@ -77,6 +81,7 @@ a{
 
 a:hover{
     background-color: var(--btn-fundo-hover);
+    color: var(--btn-texto);
 }
 
 @media (max-width: 768px){
