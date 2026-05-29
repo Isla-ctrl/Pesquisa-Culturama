@@ -107,6 +107,7 @@ textarea{
 input[type="radio"],
 input[type="checkbox"]{
     width: auto;
+    accent-color: var(--btn-submit-hover);
 }
 
 input[type="color"]{
@@ -123,6 +124,22 @@ input[type="tel"],
 input[type="file"]{
     margin-bottom: 0;
 }
+
+input[type="file"]::file-selector-button{
+    background-color: var(--form-fundo-caixa);
+    color: var(--form-texto);
+    border: var(--form-borda);
+    font-family: "Work Sans", sans-serif;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+input[type="file"]::file-selector-button:hover{
+    background-color: var(--form-texto);
+    color: var(--form-fundo-pagina);
+}
+
 
 small{
     display: inline-block;
