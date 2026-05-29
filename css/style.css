@@ -96,6 +96,8 @@ input, select, textarea{
     margin-bottom: 20px;
     border: var(--form-borda);
     border-radius: 5px;
+    background-color: var(--form-fundo-caixa);
+    color: var(--form-texto);
 }
 
 textarea{
