@@ -209,4 +209,8 @@ button[type="reset"]:hover{
     legend{
         font-size: 1rem;
     }
+
+    label{
+        font-size: 0.875rem;
+    }
 }
