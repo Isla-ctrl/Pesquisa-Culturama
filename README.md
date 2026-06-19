@@ -33,5 +33,4 @@ A distribuição de tecnologias no repositório reflete uma base sólida em sem�
 
 ---
 
-'''markdown
 [Veja o projeto rodando aqui!](https://isla-ctrl.github.io/Pesquisa-Culturama/)
