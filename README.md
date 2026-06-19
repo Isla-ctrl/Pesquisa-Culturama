@@ -1,7 +1,7 @@
 # 🎭 Culturama
 
 <p align="center">
-  <img src="culturama.gif" alt="Formulário Culturama com foco em acessibilidade e alto contraste">
+  <img src="img/culturama.gif" alt"Funcionalidade do botão de Alto Contraste em uso no Formulário da Culturama"
 </p>
 
 ## 📋 Sobre o Projeto
