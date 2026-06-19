@@ -1,7 +1,7 @@
 # 🎭 Culturama
 
 <p align="center">
-  <img src="culturama.gif" alt="Formulário Culturama com foco em acessibilidade e alto contraste" width="100%">
+  <img src="culturama.gif" alt="Formulário Culturama com foco em acessibilidade e alto contraste">
 </p>
 
 ## 📋 Sobre o Projeto
