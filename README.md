@@ -30,3 +30,8 @@ A distribuição de tecnologias no repositório reflete uma base sólida em sem�
 *   **HTML5 (71.0%):** Uso correto de tags estruturais como `<fieldset>`, `<legend>`, `<datalist>` e `<textarea>` para garantir uma árvore de acessibilidade limpa.
 *   **CSS3 (27.7%):** Uso de variáveis nativas (`var(--css)`), arquitetura flexível, responsividade e customização completa de elementos nativos de formulário.
 *   **JavaScript (1.3%):** Manipulação de DOM limpa e direta para ativação das classes de acessibilidade.
+
+---
+
+'''markdown
+[Veja o projeto rodando aqui!](https://isla-ctrl.github.io/Pesquisa-Culturama/)
